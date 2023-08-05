@@ -4,8 +4,8 @@ import PeopleCard from "../components/MovieCard/PeopleCard";
 const People = () => {
   
   const [people, setPeople] = useState([]);
-  const peopleApi = "https://api.themoviedb.org/3/person/popular";
-  const apikey = "4b7feb4a7688c3c46324165839ad0ffd";
+  const peopleApi = "https://api.themoviedb.org/3/person/popular/?";
+  const apikey = "3498868cb8e86dcb1617c1912abc216d";
 
   useEffect ( () => {
 fetch(`${peopleApi}?api_key=${apikey}`)
