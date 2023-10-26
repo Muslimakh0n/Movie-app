@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Movie, SearchList, SingleMovie, SingleTv, Tv } from "./pages";
+import { Home, Movie, People, SearchList, SingleMovie, SinglePeople, SingleTv, Tv } from "./pages";
 import Header from "./containers/Header";
-import PeopleCard from "./components/MovieCard/PeopleCard";
 
-function App() {
+function  App() {
   return (
     <div>
       <Router>
@@ -16,7 +15,9 @@ function App() {
             <Route path="/single-movie/:id" element={<SingleMovie />} />
             <Route path="/tv/:id" element={<SingleTv />} />
             <Route path="/search/:searchQuery" element={<SearchList />} />
-            <Route path="/people" element={<PeopleCard />} />
+            <Route path="/people" element={<People/>} />
+            <Route path="/single-person/:id" element={<SinglePeople/>} />
+            
           </Routes>
         </div>
       </Router>

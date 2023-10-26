@@ -7,7 +7,7 @@ const Header = () => {
   const [searchValue, setSearchValue] = useState("");
   const navigate = useNavigate();
   const { id } = useParams();
-  console.log("id",id);
+  console.log("id", id);
   useEffect(() => {
     if (searchValue.length > 0) {
       navigate(`/search/${searchValue}`);

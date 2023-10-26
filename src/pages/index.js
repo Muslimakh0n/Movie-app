@@ -5,5 +5,7 @@ import SingleTv from "./SingleTv";
 import Tv from "./Tv";
 import SearchList from "./SearchList";
 import People from "./People";
+import SinglePeople from "./SinglePeople";
 
-export { Home, Movie, SingleMovie, SingleTv,SearchList, Tv , People };
+
+export { Home, Movie, SingleMovie, SingleTv,SearchList, Tv , People ,SinglePeople};
